@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blade & Co. — Barbería Premium · Querétaro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="barberia.css">
+</head>
+<body>
+
+<!-- CURSOR PERSONALIZADO -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">B&amp;</span>
+      <span class="logo-text">Blade <em>&amp;</em> Co.</span>
+    </a>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#galeria">Galería</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <a href="https://wa.me/5214420000000" class="btn-reservar">Reservar cita</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-media">
+    <img
+      src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1600&q=85&auto=format&fit=crop&crop=top"
+      alt="Interior Blade & Co." class="hero-img">
+    <div class="hero-veil"></div>
+  </div>
+
+  <div class="hero-body">
+    <div class="hero-tag">Querétaro · Est. 2018</div>
+    <h1 class="hero-title">El corte<br><em>perfecto</em><br>te espera.</h1>
+    <p class="hero-sub">Experiencia premium para el hombre que cuida cada detalle. Navaja, tijera y ritual.</p>
+    <div class="hero-actions">
+      <a href="#servicios" class="btn-primary">Ver servicios</a>
+      <a href="https://wa.me/5214420000000" class="btn-outline">Agendar ahora →</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- STRIP DE STATS -->
+<div class="stats-strip">
+  <div class="strip-inner">
+    <div class="sstat"><strong>6+</strong><span>Años en Querétaro</span></div>
+    <div class="strip-sep"></div>
+    <div class="sstat"><strong>12K+</strong><span>Clientes atendidos</span></div>
+    <div class="strip-sep"></div>
+    <div class="sstat"><strong>4</strong><span>Barberos especializados</span></div>
+    <div class="strip-sep"></div>
+    <div class="sstat"><strong>4.9 ★</strong><span>Calificación Google</span></div>
+  </div>
+</div>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="servicios">
+  <div class="servicios-inner">
+
+    <div class="sec-head">
+      <div class="sec-label">— Lo que hacemos</div>
+      <h2 class="sec-title">Servicios <em>&amp;</em> precios</h2>
+      <p class="sec-sub">Cada servicio incluye consulta personalizada, bebida de bienvenida y toalla caliente.</p>
+    </div>
+
+    <!-- TABS -->
+    <div class="s-tabs">
+      <button class="stab active" data-filter="todos">Todos</button>
+      <button class="stab" data-filter="corte">Cortes</button>
+      <button class="stab" data-filter="barba">Barba</button>
+      <button class="stab" data-filter="ritual">Rituales</button>
+      <button class="stab" data-filter="combo">Combos</button>
+    </div>
+
+    <div class="s-grid">
+
+      <!-- CORTES -->
+      <div class="s-card" data-cat="corte">
+        <div class="s-card-top">
+          <div class="s-icon">✂</div>
+          <div class="s-badge">30 min</div>
+        </div>
+        <h3 class="s-name">Corte Clásico</h3>
+        <p class="s-desc">Tijera y/o máquina con degradado a elección. Incluye lavado, secado y peinado final.</p>
+        <div class="s-footer">
+          <span class="s-price">$220</span>
+          <a href="https://wa.me/5214420000000" class="s-cta">Reservar</a>
+        </div>
+      </div>
+
+      <div class="s-card" data-cat="corte">
+        <div class="s-card-top">
+          <div class="s-icon">✂</div>
+          <div class="s-badge">45 min</div>
+        </div>
+        <h3 class="s-name">Corte Premium</h3>
+        <p class="s-desc">Diseño personalizado con consulta de estilo, tijera artesanal, navaja de detalle y producto de acabado.</p>
+        <div class="s-footer">
+          <span class="s-price">$320</span>
+          <a href="https://wa.me/5214420000000" class="s-cta">Reservar</a>
+        </div>
+      </div>
+
+      <div class="s-card" data-cat="corte">
+        <div class="s-card-top">
+          <div class="s-icon">✂</div>
+          <div class="s-badge">20 min</div>
+        </div>
+        <h3 class="s-name">Arreglo de Perfil</h3>
+        <p class="s-desc">Definición de líneas frontales, sienes y nuca con navaja recta. Acabado impecable.</p>
+        <div class="s-footer">
+          <span class="s-price">$120</span>
+          <a href="https://wa.me/5214420000000" class="s-cta">Reservar</a>
+        </div>
+      </div>
+
+      <!-- BARBA -->
+      <div class="s-card" data-cat="barba">
+        <div class="s-card-top">
+          <div class="s-icon">◈</div>
+          <div class="s-badge">30 min</div>
+        </div>
+        <h3 class="s-name">Perfilado de Barba</h3>
+        <p class="s-desc">Definición de líneas, tijera y navaja recta. Aceite hidratante de acabado incluido.</p>
+        <div class="s-footer">
+          <span class="s-price">$180</span>
+          <a href="https://wa.me/5214420000000" class="s-cta">Reservar</a>
+        </div>
+      </div>
+
+      <div class="s-card featured" data-cat="barba">
+        <div class="s-card-top">
+          <div class="s-icon">◈</div>
+          <div class="s-badge highlight">Más pedido</div>
+        </div>
+        <h3 class="s-name">Afeitado con Navaja</h3>
+        <p class="s-desc">Ritual completo: toalla caliente, aceite pre-shave, navaja recta, balm hidratante. Una experiencia de otro nivel.</p>
+        <div class="s-footer">
+          <span class="s-price">$260</span>
+          <a href="https://wa.me/5214420000000" class="s-cta">Reservar</a>
+        </div>
+      </div>
+
+      <!-- RITUALES -->
+      <div class="s-card" data-cat="ritual">
+        <div class="s-card-top">
+          <div class="s-icon">◎</div>
+          <div class="s-badge">25 min</div>
+        </div>
+        <h3 class="s-name">Tratamiento Capilar</h3>
+        <p class="s-desc">Hidratación profunda con ampolleta nutritiva, masaje de cuero cabelludo y secado profesional.</p>
+        <div class="s-footer">
+          <span class="s-price">$200</span>
+          <a href="https://wa.me/5214420000000" class="s-cta">Reservar</a>
+        </div>
+      </div>
+
+      <div class="s-card" data-cat="ritual">
+        <div class="s-card-top">
+          <div class="s-icon">◎</div>
+          <div class="s-badge">20 min</div>
+        </div>
+        <h3 class="s-name">Facial para Caballero</h3>
+        <p class="s-desc">Limpieza, exfoliación e hidratación facial. Perfecto para antes o después del afeitado.</p>
+        <div class="s-footer">
+          <span class="s-price">$250</span>
+          <a href="https://wa.me/5214420000000" class="s-cta">Reservar</a>
+        </div>
+      </div>
+
+      <!-- COMBOS -->
+      <div class="s-card featured" data-cat="combo">
+        <div class="s-card-top">
+          <div class="s-icon">⬡</div>
+          <div class="s-badge highlight">Ahorra $80</div>
+        </div>
+        <h3 class="s-name">Combo Gentleman</h3>
+        <p class="s-desc">Corte clásico + perfilado de barba + toalla caliente. El combo más popular de la casa.</p>
+        <div class="s-footer">
+          <div>
+            <span class="s-price">$360</span>
+            <span class="s-old">$440</span>
+          </div>
+          <a href="https://wa.me/5214420000000" class="s-cta">Reservar</a>
+        </div>
+      </div>
+
+      <div class="s-card featured" data-cat="combo">
+        <div class="s-card-top">
+          <div class="s-icon">⬡</div>
+          <div class="s-badge highlight">Ahorra $120</div>
+        </div>
+        <h3 class="s-name">Combo Black Label</h3>
+        <p class="s-desc">Corte premium + afeitado con navaja + facial de caballero + tratamiento capilar. La experiencia completa.</p>
+        <div class="s-footer">
+          <div>
+            <span class="s-price">$780</span>
+            <span class="s-old">$900</span>
+          </div>
+          <a href="https://wa.me/5214420000000" class="s-cta">Reservar</a>
+        </div>
+      </div>
+
+    </div><!-- /s-grid -->
+  </div>
+</section>
+
+<!-- NOSOTROS - sección partida -->
+<section id="nosotros" class="about-split">
+  <div class="about-img-col">
+    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=900&q=85&auto=format&fit=crop" alt="Barbero trabajando">
+    <div class="about-quote">"El estilo no es vanidad,<br>es respeto propio."</div>
+  </div>
+  <div class="about-text-col">
+    <div class="sec-label">— Nuestra historia</div>
+    <h2 class="sec-title">Más que un corte,<br>un <em>ritual</em>.</h2>
+    <p>Blade &amp; Co. nació en 2018 con una idea clara: el hombre de Querétaro merece un espacio donde cada visita sea una experiencia, no un trámite.</p>
+    <p>Nuestros barberos tienen formación internacional y actualizan sus técnicas continuamente. Usamos únicamente productos de gama alta: Reuzel, American Crew, Baxter of California y Morgan's Pomade.</p>
+    <p>Sin prisa, sin bullicio. Solo tú, tu barbero y el resultado que buscas.</p>
+    <div class="about-pills">
+      <span>Productos premium</span>
+      <span>Barberos certificados</span>
+      <span>Cita garantizada</span>
+      <span>Ambiente sin prisa</span>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria" class="galeria">
+  <div class="galeria-head">
+    <div class="sec-label">— Nuestro trabajo</div>
+    <h2 class="sec-title">Galería</h2>
+  </div>
+  <div class="galeria-grid">
+    <div class="g-cell tall">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80&auto=format&fit=crop&crop=top" alt="Barbería interior" loading="lazy">
+    </div>
+    <div class="g-cell">
+      <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80&auto=format&fit=crop" alt="Corte de cabello" loading="lazy">
+    </div>
+    <div class="g-cell">
+      <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80&auto=format&fit=crop" alt="Afeitado con navaja" loading="lazy">
+    </div>
+    <div class="g-cell wide">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80&auto=format&fit=crop" alt="Detalle de corte" loading="lazy">
+    </div>
+    <div class="g-cell">
+      <img src="https://images.unsplash.com/photo-1593702295094-86e7a7624a2d?w=600&q=80&auto=format&fit=crop" alt="Silla de barbero" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- RESEÑAS -->
+<section class="reviews">
+  <div class="reviews-inner">
+    <div class="sec-label centered">— Lo que dicen</div>
+    <h2 class="sec-title centered">Clientes que <em>vuelven</em>.</h2>
+    <div class="r-grid">
+
+      <div class="r-card">
+        <div class="r-stars">★★★★★</div>
+        <p>"El mejor afeitado con navaja que he tenido en mi vida. El ritual completo, la toalla caliente, el aceite… regreso cada dos semanas sin falta."</p>
+        <div class="r-author">
+          <div class="r-avatar">JL</div>
+          <div>
+            <strong>Jorge L.</strong>
+            <span>Cliente desde 2019 · Google</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="r-card">
+        <div class="r-stars">★★★★★</div>
+        <p>"Vine por recomendación y ya no voy a ningún otro lado. El ambiente es increíble, se nota la diferencia con una barbería normal desde que entras."</p>
+        <div class="r-author">
+          <div class="r-avatar">RC</div>
+          <div>
+            <strong>Rodrigo C.</strong>
+            <span>Cliente desde 2021 · Google</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="r-card">
+        <div class="r-stars">★★★★★</div>
+        <p>"El Combo Black Label vale cada peso. Salí completamente renovado. Mi barbero entendió exactamente lo que quería sin que yo supiera cómo explicarlo."</p>
+        <div class="r-author">
+          <div class="r-avatar">AM</div>
+          <div>
+            <strong>Andrés M.</strong>
+            <span>Cliente desde 2022 · Google</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HORARIO + MAPA -->
+<section id="ubicacion" class="info-mapa">
+  <div class="info-col">
+    <div class="sec-label">— Visítanos</div>
+    <h2 class="sec-title">Dónde<br><em>encontrarnos</em>.</h2>
+
+    <div class="info-rows">
+      <div class="info-row">
+        <div class="info-ico">📍</div>
+        <div>
+          <strong>Dirección</strong>
+          <span>Av. Constituyentes 500, Local 12<br>Querétaro, Qro.</span>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-ico">🕐</div>
+        <div>
+          <strong>Horario</strong>
+          <span>Lun – Sáb: 9:00 – 20:00<br>Domingo: 10:00 – 16:00</span>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-ico">📞</div>
+        <div>
+          <strong>Contacto</strong>
+          <span>+52 442 000 0000<br>@bladeandco.qro</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://wa.me/5214420000000" class="btn-primary" style="margin-top:32px; display:inline-block;">
+      Agendar por WhatsApp
+    </a>
+  </div>
+  <div class="mapa-col">
+    <div class="map-wrap">
+      <iframe src="https://www.google.com/maps?q=queretaro+constituyentes&output=embed"
+        allowfullscreen loading="lazy" title="Ubicación Blade & Co."></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">Blade <em>&amp;</em> Co.</span>
+    <span class="footer-copy">© 2026 Blade &amp; Co. Barbería Premium · Querétaro</span>
+    <div class="footer-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#ubicacion">Ubicación</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5214420000000" class="float-wa" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>
+/* ---- Cursor personalizado ---- */
+const cursor = document.getElementById('cursor');
+const dot    = document.getElementById('cursorDot');
+document.addEventListener('mousemove', e => {
+  cursor.style.transform = `translate(${e.clientX - 20}px, ${e.clientY - 20}px)`;
+  dot.style.transform    = `translate(${e.clientX - 4}px,  ${e.clientY - 4}px)`;
+});
+document.querySelectorAll('a, button').forEach(el => {
+  el.addEventListener('mouseenter', () => cursor.classList.add('grow'));
+  el.addEventListener('mouseleave', () => cursor.classList.remove('grow'));
+});
+
+/* ---- Filtro de servicios ---- */
+const stabs  = document.querySelectorAll('.stab');
+const scards = document.querySelectorAll('.s-card');
+stabs.forEach(tab => {
+  tab.addEventListener('click', function() {
+    stabs.forEach(t => t.classList.remove('active'));
+    this.classList.add('active');
+    const f = this.dataset.filter;
+    scards.forEach(c => {
+      c.classList.toggle('hidden', f !== 'todos' && c.dataset.cat !== f);
+    });
+  });
+});
+
+/* ---- Header scroll ---- */
+const hdr = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  hdr.classList.toggle('scrolled', window.scrollY > 60);
+});
+</script>
+
+</body>
+</html>
